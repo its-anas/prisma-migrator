@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "moduleResolution": "node",
+    "lib": ["es2021", "DOM", "DOM.Iterable"],
+    "types": ["node"],
+    "module": "commonjs",
+    "rootDir": ".",
+    "outDir": "build",
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*.ts", "types/**/*"]
+}

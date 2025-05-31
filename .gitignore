@@ -1,0 +1,7 @@
+dist
+build
+data
+node_modules
+output
+.env
+prisma

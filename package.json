@@ -1,0 +1,25 @@
+{
+  "name": "prisma-migrator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "esr src/migrate.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@types/pg": "^8.11.11"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.8.2",
+    "@prisma/sdk": "^4.0.0",
+    "dotenv": "^16.4.5",
+    "esbuild": "^0.20.2",
+    "esbuild-runner": "^2.2.2",
+    "pg": "^8.13.1",
+    "prisma": "^6.8.2"
+  }
+}
