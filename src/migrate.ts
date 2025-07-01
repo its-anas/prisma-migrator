@@ -40,6 +40,11 @@ async function migrateModel(model: string, src: PrismaClient, dst: PrismaClient)
 
   let rows: any[];
   try {
+    if (!(model in (src as any)) || !(model in (dst as any))) {
+      log(`  ❌ model "${model}" does not exist in source or destination. Or maybe you forgot to run "prisma generate"?`);
+      return;
+    }
+
     rows = await (src as any)[model].findMany();
   } catch (e) {
     log(`  ❌ fetch error: ${(e as Error).message}`);
